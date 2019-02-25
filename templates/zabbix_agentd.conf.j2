@@ -148,7 +148,7 @@ ServerActive={{ zabbix_agent_server_active_address | default('127.0.0.1') }}
 # Default:
 # Hostname=
 
-Hostname={{ ansible_fqdn }}
+Hostname={{ zabbix_agent_hostname }}
 
 ### Option: HostnameItem
 #	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
