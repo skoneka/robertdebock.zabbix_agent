@@ -112,7 +112,7 @@ ListenPort={{ zabbix_agent_listen_port | default('10050') }}
 #
 # Mandatory: no
 # Default:
-# ListenIP=0.0.0.0
+ListenIP={{ zabbix_agent_listen_ip | default('0.0.0.0') }}
 
 ### Option: StartAgents
 #	Number of pre-forked instances of zabbix_agentd that process passive checks.
